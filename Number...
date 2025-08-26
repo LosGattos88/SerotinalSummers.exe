@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stage 3</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <p>Q3: NUMBER!NUMBER!NUMBER!NUMBER!</p>
+    <input type="text" id="answer" placeholder="Your answer">
+    <button onclick="checkAnswer()">Submit</button>
+  </div>
+
+  <script>
+    function checkAnswer() {
+      const user = document.getElementById('answer').value.trim();
+      if(user === '5782') {
+        window.location.href = 'stage4.html';
+      } else {
+        alert('Try again.');
+      }
+    }
+  </script>
+</body>
+</html>

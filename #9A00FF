@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stage 4</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="center-screen">
+    <p style="font-size:32px;">#9A00FF</p>
+    <button class="large-button" onclick="nextStage()">Yes</button>
+    <button class="large-button" onclick="wrong()">No</button>
+  </div>
+
+  <script>
+    function nextStage() {
+      window.location.href = 'stage5.html';
+    }
+    function wrong() {
+      alert('Try again.');
+    }
+  </script>
+</body>
+</html>
